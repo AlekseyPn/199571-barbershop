@@ -1,6 +1,7 @@
 # Учебный проект «Барбершоп»
 
 * Студент: [Алексей Пересмехин](https://up.htmlacademy.ru/htmlcss/14/user/199571).
+* Наставник: [Евгений Болтян](https://up.htmlacademy.ru/htmlcss/14/user/83202).
 
 ---
 
