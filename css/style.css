@@ -3,3 +3,11 @@ body {
   color: #ffffff;
   background: url(../img/body-img.jpg) no-repeat 0 0;
 }
+
+h1 {
+  font: 700 30px/42px 'PTsans Bold', Arial, sans-serif;
+}
+
+h2 {
+  font: 700 24px/30px 'PTsans Bold', Arial, sans-serif;
+}
