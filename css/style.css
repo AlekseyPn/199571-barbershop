@@ -1,7 +1,7 @@
 body {
   font: 700 14px/24px 'PTsans Bold', Arial, sans-serif;
   color: #ffffff;
-  background: url(../img/body-img.jpg) no-repeat 0 0;
+  background: url(../img/body-img.jpg) no-repeat 50% 3px;
 }
 
 h1 {
