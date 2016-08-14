@@ -1,13 +1,202 @@
 body {
+  min-width: 1122px;
+  margin: 0;
+  padding: 0;
+
   font: 700 14px/24px 'PTsans Bold', Arial, sans-serif;
-  color: #ffffff;
-  background: url(../img/body-img.jpg) no-repeat 50% 3px;
 }
 
 h1 {
-  font: 700 30px/42px 'PTsans Bold', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 42px;
 }
 
 h2 {
-  font: 700 24px/30px 'PTsans Bold', Arial, sans-serif;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-header {
+  margin-bottom: 60px;
+}
+
+.main-navigation {
+  float: left;
+  width: 780px;
+  min-height: 70px;
+}
+
+.main-navigation ul li {
+  display: inline-block;
+}
+
+.user-block {
+  float: right;
+  width: 140px;
+  min-height: 70px;
+}
+
+/*--Главный контент index--*/
+
+.index-logo {
+  width: 368px;
+  min-height: 204px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 25px;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.features-item {
+  float: left;
+  width: 300px;
+  min-height: 175px;
+  margin-right: 20px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.index-content {
+  margin-bottom: 35px;
+  padding: 50px 80px;
+}
+
+.index-content-left {
+  float: left;
+  width: 380px;
+  min-height: 330px;
+}
+
+.index-content-right {
+  float: right;
+  width: 300px;
+  min-height: 330px;
+}
+
+/*--Разметка каталога--*/
+
+.header-inner {
+  margin-bottom: 25px;
+}
+
+.catalog-header {
+  margin-bottom: 50px;
+}
+
+.catalog-content-left {
+  width: 220px;
+  float: left;
+  margin-right: 20px;
+}
+
+.catalog-content-right {
+  width: 700px;
+  float: right;
+
+  font-size: 0;
+}
+
+.content-box {
+  margin-bottom: 45px;
+}
+
+.box-item {
+  display: inline-block;
+  vertical-align: top;
+
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+}
+
+.box-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.catalog-pagination {
+  font-size: 14px;
+}
+
+.pagination-item {
+  margin-right: 7px;
+}
+
+/*--Разметка catalog-item*/
+
+.catalog-product_left {
+  width: 470px;
+  float: left;
+  margin-right: 70px;
+}
+
+.gallery-img-large {
+  margin-bottom: 20px;
+}
+
+.img-small {
+  display: inline-block;
+  margin-right: 20px;  
+}
+
+.img-small:last-child {
+  margin-right: 0;
+}
+
+.catalog-product_right {
+  width: 400px;
+  float: right;
+}
+
+.available {
+  float: left;
+}
+
+.articul {
+  float: right;
+}
+
+/*--Разметка подвала--*/
+.main-footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer-contacts {
+  float: left;
+  width: 320px;
+  margin-right: 60px;
+  min-height: 90px;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+  min-height: 90px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 180px;
+  min-height: 90px;
 }
