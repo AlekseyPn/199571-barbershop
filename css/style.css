@@ -461,7 +461,7 @@ input:checked + label:after {
   width: 12px;
   height: 12px;
 
-  background: url(../img/checkbox-item.png) no-repeat center center;
+  background:#000 url(../img/checkbox-item.png) no-repeat center center;
 }
 
 input[type="radio"]:checked + label:after {
