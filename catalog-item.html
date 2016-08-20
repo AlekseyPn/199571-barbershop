@@ -13,7 +13,7 @@
         <nav class="main-navigation">
           <ul>
             <li>
-              <a href="index.html">
+              <a class="catalog-logo" href="index.html">
                 <img class="header-logo" src="img/catalog-logo.png" width="111" height="24" alt="Логотип «Барбершоп»" >
               </a>
             </li>
@@ -27,7 +27,7 @@
               <a href="#">Прайс-лист</a>
             </li>
             <li>
-              <a href="catalog.html">Магазин</a>
+              <a class="active-page" href="#">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -42,16 +42,16 @@
 <!--  Main-content  -->
     <main class="container">
         <h1 class="header-inner">Набор для путешествий &#171;Baxter of california&#187;</h1>
+
         <div class="breadcrumbs-catalog">
           <a href="#" class="breadcrumbs-link">Главная</a>
-          <a href="#" class="breadcrumbs-link">Магазин</a>
+          <a href="catalog.html" class="breadcrumbs-link">Магазин</a>
           <a href="#" class="breadcrumbs-link">Средства для ухода</a>
           <a href="#" class="breadcrumbs-link">Набор для путешествий &#171;Baxter of california&#187;</a>
         </div>
 
       <section class="catalog-content clearfix">
-        <div class="catalog-product_left clearfix">
-          <div class="product-gallery">
+        <div class="item-image">
             <img class="gallery-img-large" src="img/catalog-item-l.jpg" alt="Изображение товара" width="460" height="498" >
             <div class="gallery-img-small">
               <img class="img-small" src="img/catalog-item-m.jpg" alt="Изображение товара" width="140" height="149">
@@ -59,25 +59,21 @@
               <img class="img-small" src="img/catalog-item-m3.jpg" alt="Изображение товара" width="140" height="149">
             </div>
           </div>
-        </div>
-        <div class="catalog-product_right clearfix">
-          <div class="product-desc-box">
+        <div class="product-desc">
+            <p class="product-available">
+              <span class="available">Есть в наличии</span><span class="articul">Артикул&#58; Dexter-ae</span>
+            </p>
 
-            <div class="product-available clearfix">
-              <p class="available">Есть в наличии</p>
-              <p class="articul">Артикул&#58; Dexter-ae</p>
-            </div>
-
-            <p class="product-desc">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+            <p class="desc-text">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
 
             <div class="item-price">
-            <p class="price">2 900 руб.</p>
-            <a class="btn_black" href="#" >Купить</a>
+            <span class="price">2 900 руб.</span>
+            <a class="btn" href="#" >Купить</a>
           </div>
 
-          <div class="kit-box">
-            <span class="kit-head">В набор входят:</span>
-            <ul class="kit-item">
+          <div class="kit-list">
+            <h2>В набор входят:</h2>
+            <ul>
               <li>Средство для умывания (50 мл)</li>
               <li>Увлажняющий крем (50 мл)</li>
               <li>Крем для бритья (50 мл)</li>
@@ -86,11 +82,10 @@
             </ul>
           </div>
           </div>
-        </div>
       </section>
     </main>
 <!--  Footer  -->
-    <footer class="main-footer">
+    <footer class="main-footer catalog-footer">
       <div class="container clearfix">
         <div class="footer-contacts">
           Барбершоп «Бородинский»<br>
@@ -100,13 +95,13 @@
         </div>
         <div class="footer-social">
           <p>Давайте дружить!</p>
-          <a class="btn_black social-btn-vk" href="#">Вконтакте</a>
-          <a class="btn_black social-btn-fb" href="#">Фейсбук</a>
-          <a class="btn_black social-btn-inst" href="#">Инстаграм</a>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
         </div>
         <div class="footer-copyright">
           <p>Разработано:</p>
-          <a class="btn_black" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
         </div>
       </div>
     </footer>
