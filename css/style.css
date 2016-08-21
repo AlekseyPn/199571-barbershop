@@ -48,7 +48,6 @@ body {
 .main-navigation ul {
   margin: 0;
   padding: 0;
-  max-height: 70px;/*Вот это смущает что так получилось*/
 
   list-style: none;
   font-size: 0;
@@ -62,13 +61,6 @@ body {
   vertical-align: top;
 }
 
-
-.main-navigation li:first-child{
-  max-height: 70px;/*И это, если убрать то у шапки снизу отступ появляется*/
-
-  overflow: hidden;
-}
-
 .main-navigation a {
   display: block;
   padding: 25px 20px;
@@ -78,7 +70,9 @@ body {
 }
 
 .main-navigation .catalog-logo {
-  padding: 25px 20px;
+  padding: 23px 20px;
+
+  line-height: 0;
 }
 
 .main-navigation a:hover {
@@ -346,7 +340,9 @@ body {
 /*--Разметка каталога--*/
 
 .main-navigation .active-page {
-  border-bottom: 4px solid #ffffff;
+  -webkit-box-shadow: inset 0px -4px 0px 0px rgba(255,255,255,1);
+  -moz-box-shadow: inset 0px -4px 0px 0px rgba(255,255,255,1);
+  box-shadow: inset 0px -4px 0px 0px rgba(255,255,255,1);
 }
 
 .main-navigation .active-page:hover {
