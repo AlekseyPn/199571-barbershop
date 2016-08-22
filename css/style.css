@@ -13,7 +13,7 @@ body {
 
 /*===Задний фон для каталога===*/
 
-.catalog-bckgr {
+.inner-body {
   color: #000000;
 
   background: #f8f5f2 url(../img/pattern-white.jpg);
@@ -61,18 +61,28 @@ body {
   vertical-align: top;
 }
 
+.main-navigation .catalog-logo {
+  float: left;
+  padding-top: 22px;
+  padding-bottom: 0;
+  line-height: 0;
+}
+
+.catalog-logo img {
+  width: 111px;
+  height: 24px;
+}
+
+.main-navigation .catalog-logo:hover {
+  background: none;
+}
+
 .main-navigation a {
   display: block;
   padding: 25px 20px;
 
   color: #ffffff;
   text-decoration: none;
-}
-
-.main-navigation .catalog-logo {
-  padding: 23px 20px;
-
-  line-height: 0;
 }
 
 .main-navigation a:hover {
@@ -338,16 +348,27 @@ body {
 }
 
 /*--Разметка каталога--*/
-
 .main-navigation .active-page {
-  -webkit-box-shadow: inset 0px -4px 0px 0px rgba(255,255,255,1);
-  -moz-box-shadow: inset 0px -4px 0px 0px rgba(255,255,255,1);
-  box-shadow: inset 0px -4px 0px 0px rgba(255,255,255,1);
+  position: relative;
+
+  cursor: default;
 }
 
 .main-navigation .active-page:hover {
-  cursor: default;
-  background-color: #000000;
+  background: none;
+}
+
+.main-navigation .active-page:after {
+  content: '';
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+  right: 20px;
+
+  height: 5px;
+
+  background-color: #ffffff;
+
 }
 
 .header-inner {
@@ -447,7 +468,7 @@ input[type="radio"] + label:before {
   border-radius: 50%;
 }
 
-input:checked + label:after {
+input[type="checkbox"]:checked + label:after {
   content: '';
   position: absolute;
   top: 4px;
@@ -457,7 +478,7 @@ input:checked + label:after {
   width: 12px;
   height: 12px;
 
-  background:#000 url(../img/checkbox-item.png) no-repeat center center;
+  background: url(../img/checkbox-item.png) no-repeat center center;
 }
 
 input[type="radio"]:checked + label:after {
