@@ -653,6 +653,10 @@ input + label {
   cursor: pointer;
 }
 
+input + label:hover {
+  color: #663d15;
+}
+
 input + label:before {
   content: '';
   position: absolute;
@@ -695,6 +699,33 @@ input[type="radio"]:checked + label:after {
 
   background-color: #000000;
   border-radius: 50%;
+}
+
+input:disabled + label:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  border: 2px solid #b0aeac;
+}
+
+input[type="radio"]:disabled + label:before {
+  content: '';
+  border-radius: 50%;
+  border-color: #b0aeac;
+}
+
+input[type="radio"]:checked:disabled + label:after {
+  background-color: #b0aeac;
+}
+
+input[type="checkbox"]:checked:disabled + label:after {
+  background-image: url(../img/checkbox-disabled.png);
 }
 
 /*--Блок с товарами--*/
