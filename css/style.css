@@ -597,6 +597,10 @@ img {
   color: inherit;
 }
 
+.breadcrumbs-catalog a:hover {
+  text-decoration: underline;
+}
+
 .breadcrumbs-catalog a:not(:last-child)::after {
   content: '';
   position: absolute;
@@ -610,7 +614,7 @@ img {
   transform: rotate(45deg);
 }
 
-.breadcrumbs-catalog a:last-child {
+.breadcrumbs-catalog .current {
   cursor: default;
   color: #aba9a7;
 }
